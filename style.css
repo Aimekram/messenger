@@ -1,0 +1,202 @@
+html {
+  font-size: 12px; }
+
+body {
+  padding-top: 5rem;
+  background: white;
+  background: radial-gradient(circle, #c1bcb7 0%, #949696 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+h3 {
+  font-size: 1.2rem; }
+
+.navbar.fixed-right {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1031;
+  background-color: #2a2a2a;
+  color: #fafafa;
+  padding-right: 0; }
+  .navbar.fixed-right h2 {
+    color: #F3E367; }
+
+.navbar-collapse {
+  height: calc(100vh - 46px);
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.nav-item {
+  border-bottom: 1px solid #F3E367;
+  padding: .5rem 1rem;
+  cursor: pointer; }
+  .nav-item p {
+    margin-bottom: 0;
+    color: #949696;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .nav-item:hover, .nav-item:focus, .nav-item:active {
+    background-color: #494949; }
+
+.navbar-toggler {
+  background-color: #F3E367; }
+  .navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+    background-color: #bcaf45; }
+
+.time {
+  margin-bottom: .2rem;
+  font-size: .6rem;
+  text-align: right; }
+
+.contacts_item_header {
+  justify-content: space-between;
+  align-items: center; }
+  .contacts_item_header svg {
+    width: 8px;
+    margin-bottom: .5rem;
+    fill: #949696; }
+    .contacts_item_header svg.active {
+      fill: #24c620; }
+
+.messages {
+  max-height: 100vh;
+  height: 100%;
+  padding: .5rem 0; }
+
+.messages_content {
+  height: calc(100vh - 235px);
+  overflow-y: scroll;
+  padding: 0 1rem; }
+
+.messages_header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem; }
+  .messages_header .time {
+    padding: 5px;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-left: 8px solid #949696;
+    box-shadow: 0 0 .3em black; }
+
+.messages_item {
+  box-shadow: 0 0 .6em black;
+  width: fit-content;
+  max-width: 85%; }
+  .messages_item p {
+    margin-bottom: 0;
+    background-color: #fafafa; }
+
+.received {
+  border-left: 10px solid #F3E367; }
+  .received .time {
+    text-align: left; }
+
+.sent {
+  border-right: 10px solid #F3E367;
+  align-self: flex-end; }
+
+form {
+  width: 100vw;
+  text-align: center;
+  background-color: #2a2a2a; }
+
+textarea {
+  width: calc(100vw - 30px);
+  margin: 1rem 1rem .5rem;
+  border-right: 10px solid #F3E367;
+  box-shadow: 0 0 .6em black;
+  outline: none;
+  resize: none;
+  background-color: #fafafa; }
+
+.buttons {
+  text-align: right;
+  margin-right: 5%; }
+
+.btn {
+  background-color: #F3E367;
+  margin: 0 .5rem 1rem;
+  font-weight: 600; }
+  .btn:hover, .btn:focus, .btn:active {
+    box-shadow: 0 0 .6em black;
+    background-color: #bcaf45; }
+
+.navbar-collapse::-webkit-scrollbar,
+.messages_content::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent; }
+
+.navbar-collapse::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #494949; }
+
+.messages_content::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #2a2a2a; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  body {
+    padding-top: 0;
+    margin-right: 25vw; }
+
+  form {
+    width: 75vw; }
+
+  textarea {
+    width: calc(70vw - 30px); }
+
+  .navbar.fixed-right {
+    bottom: 0;
+    width: 25vw;
+    left: auto;
+    flex-flow: column nowrap;
+    align-items: flex-start; }
+
+  .navbar.fixed-right .navbar-collapse {
+    flex-grow: 0;
+    flex-direction: column;
+    width: 100%; }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%; }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item {
+    width: 100%; }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item {
+    top: 0; }
+
+  .navbar.fixed-right .navbar-nav .nav-item {
+    left: auto;
+    right: 100%; } }
+@media (min-width: 1600px) {
+  body {
+    margin-right: 30vw; }
+
+  .navbar.fixed-right {
+    width: 30vw; }
+
+  form {
+    width: 70vw; } }
+
+/*# sourceMappingURL=style.css.map */
